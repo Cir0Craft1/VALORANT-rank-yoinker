@@ -307,7 +307,7 @@ try:
                             player["Subject"]: {
                                 "team": player["TeamID"],
                                 "agent": player["CharacterID"],
-                                "streamer_mode": player["PlayerIdentity"]["Incognito"],
+                               #"streamer_mode": player["PlayerIdentity"]["Incognito"],
                             }
                         }
                     )
@@ -469,16 +469,7 @@ try:
 
                         player_level = player["PlayerIdentity"].get("AccountLevel")
 
-                        if player["PlayerIdentity"]["Incognito"]:
-                            Namecolor = colors.get_color_from_team(
-                                player["TeamID"],
-                                names[player["Subject"]],
-                                player["Subject"],
-                                Requests.puuid,
-                                agent=player["CharacterID"],
-                                party_members=partyMembersList,
-                            )
-                        else:
+
                             Namecolor = colors.get_color_from_team(
                                 player["TeamID"],
                                 names[player["Subject"]],
