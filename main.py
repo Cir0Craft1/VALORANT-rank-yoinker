@@ -470,7 +470,7 @@ try:
                         player_level = player["PlayerIdentity"].get("AccountLevel")
 
 
-                            Namecolor = colors.get_color_from_team(
+                        Namecolor = colors.get_color_from_team(
                                 player["TeamID"],
                                 names[player["Subject"]],
                                 player["Subject"],
